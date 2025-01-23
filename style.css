@@ -65,11 +65,16 @@ section {
     height: 6rem;
 }
 
+.header section nav {
+    display: flex;
+    gap: 2rem;
+}
+
 .header section nav a {
-    margin: 0 1rem;
     font-size: 1.8rem;
     color: floralwhite;
     transition: 0.5s linear;
+    padding: 0.5rem;
 }
 
 .header section nav a:hover {
@@ -167,20 +172,20 @@ section {
     padding: 1rem 0;
 }
 
-.modal{
+.modal {
     display: flex;
     flex-direction: column;
     background-color: transparent;
     gap: 20px;
     z-index: 4;
-    position:fixed;
-    top:50%;
+    position: fixed;
+    top: 50%;
     left: -90%;
     transform: translate(-50%, -50%);
     transition: left 0.5s ease-in-out;
 }
 
-.mask{  
+.mask {
     visibility: hidden;
     transition: visibility 1s linear;
     z-index: 3;
@@ -194,12 +199,20 @@ section {
 @media (max-width: 768px) {
     .header section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
     }
 
     .header section nav {
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .header section nav a {
+        font-size: 1.6rem;
+        padding: 1rem 0;
     }
 
     .box-principal div h3 {
@@ -207,7 +220,7 @@ section {
     }
 
     .box-principal div p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .box-about .about-container {
@@ -215,7 +228,8 @@ section {
         align-items: center;
     }
 
-    .box-about .about-img, .box-about .about-text {
+    .box-about .about-img,
+    .box-about .about-text {
         flex: 1 1 100%;
         max-width: 100%;
     }
@@ -224,47 +238,7 @@ section {
         padding: 1rem;
     }
 
-    .box-about .about-text h3 {
-        font-size: 2.5rem;
-    }
-
-    .box-about .about-text p {
-        font-size: 1.2rem;
-    }
-
-    .link-button {
-        font-size: 1.5rem;
-        padding: 0.8rem 2.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .box-principal div h3 {
-        font-size: 3.5rem;
-    }
-
-    .box-principal div p {
-        font-size: 1.2rem;
-    }
-
-    .header section a img {
-        height: 4rem;
-    }
-
-    .header section nav a {
-        font-size: 1.4rem;
-    }
-
-    .box-about .about-text h3 {
-        font-size: 2rem;
-    }
-
-    .box-about .about-text p {
-        font-size: 1rem;
-    }
-
-    .link-button {
-        font-size: 1.3rem;
-        padding: 0.7rem 2rem;
+    .title {
+        font-size: 3rem;
     }
 }
