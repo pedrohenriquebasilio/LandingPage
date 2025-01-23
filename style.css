@@ -166,6 +166,7 @@ section {
     line-height: 1.8;
     padding: 1rem 0;
 }
+
 .modal{
     display: flex;
     flex-direction: column;
@@ -179,15 +180,91 @@ section {
     transition: left 0.5s ease-in-out;
 }
 
-
 .mask{  
-        visibility: hidden;
-        transition: visibility 1s linear;
-        z-index: 3;
-        position: fixed;
-        inset: 0;
-        width: 100vw;
-        height: 100vh;
-        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: visibility 1s linear;
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
 
+@media (max-width: 768px) {
+    .header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header section nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-principal div h3 {
+        font-size: 4rem;
+    }
+
+    .box-principal div p {
+        font-size: 1.5rem;
+    }
+
+    .box-about .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-about .about-img, .box-about .about-text {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .box-about .about-img img {
+        padding: 1rem;
+    }
+
+    .box-about .about-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .box-about .about-text p {
+        font-size: 1.2rem;
+    }
+
+    .link-button {
+        font-size: 1.5rem;
+        padding: 0.8rem 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-principal div h3 {
+        font-size: 3.5rem;
+    }
+
+    .box-principal div p {
+        font-size: 1.2rem;
+    }
+
+    .header section a img {
+        height: 4rem;
+    }
+
+    .header section nav a {
+        font-size: 1.4rem;
+    }
+
+    .box-about .about-text h3 {
+        font-size: 2rem;
+    }
+
+    .box-about .about-text p {
+        font-size: 1rem;
+    }
+
+    .link-button {
+        font-size: 1.3rem;
+        padding: 0.7rem 2rem;
+    }
 }
