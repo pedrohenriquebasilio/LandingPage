@@ -22,7 +22,8 @@
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Sobre</a>
-                <a href="#">Endereço</a>
+                <a href="#">Avaliações</a>
+                <a href="#" onclick="ShowModal()">Endereço</a>
             </nav>
         </section>
     </header>
@@ -30,22 +31,29 @@
         <div>
             <h3>O melhor ambiente e café da região</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis modi cumque ullam maiores, error magni ea similique enim, ex aliquam nemo. Veritatis impedit esse, vel enim saepe ducimus sapiente!</p>
-            <a>Garanta o seu agora!</a>
+            <a class="link-button">Garanta o seu agora!</a>
         </div>
     </section>
-    <section>
-        <h2><span>Sobre</span> nós</h2>
-        <div>
-            <div>
+    <section class="box-about">
+        <h2 class="title"><span>Sobre</span> nós</h2>
+        <div class="about-container">
+            <div class="about-img">
                 <img src="/images/about-img.jpeg" alt="About-us">
             </div>
-            <div>
+            <div class="about-text">
                 <h3>O que faz nosso café especial</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus magnam aspernatur expedita quos repudiandae in, placeat at nihil maxime sapiente temporibus, accusamus eligendi dolor unde earum doloremque eius debitis?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga fugiat ad blanditiis. Sit saepe minus labore quo earum minima distinctio temporibus commodi iste consequuntur odit, eligendi officia sunt. Fuga?</p>
-                <a>Saiba Mais!</a>
+                <a class="link-button">Saiba Mais!</a>
             </div>
         </div>
     </section>
+    <div class="modal">
+        <h3 class="title"><span>Nosso </span>Endereço</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2927375445333!2d-43.92015092433784!3d-19.91206518147233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a242c99e9c3%3A0x45825ed57e68a8d3!2sLanchonete%20Cafel%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1737593188401!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mask" onclick="hiddenModal()"></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

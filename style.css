@@ -102,18 +102,92 @@ section {
     line-height: 1.8;
 }
 
-.box-principal div a {
+.link-button {
     background-color: var(--main-color);
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
-    color: #FFF;
+    color: #010103;
     padding: 1rem 3rem;
     border: none;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
 }
 
 .box-principal div a:hover {
     letter-spacing: 0.1rem;
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.title span {
+    color: var(--main-color);   
+}
+
+.box-about .about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.box-about .about-img {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.box-about .about-img img {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+}
+
+.box-about .about-text {
+    flex: 1 1 45%;
+    max-width: 45%;
+    padding: 2rem;
+}
+
+.box-about .about-text h3 {
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.box-about .about-text p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #FFF;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    position:fixed;
+    top:50%;
+    left: -90%;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease-in-out;
+}
+
+
+.mask{  
+        visibility: hidden;
+        transition: visibility 1s linear;
+        z-index: 3;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
 }
